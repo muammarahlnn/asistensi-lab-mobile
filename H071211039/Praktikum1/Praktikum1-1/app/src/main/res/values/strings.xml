@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">prak1</string>
+
+    <string-array name="bangun_ruang">
+        <item>bulat</item>
+        <item>kerucut</item>
+        <item>balok</item>
+    </string-array>
+</resources>

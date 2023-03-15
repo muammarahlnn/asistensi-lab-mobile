@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">tugas2</string>
+
+    <string-array name="bangun_ruang">
+        <item>Balok</item>
+        <item>Kerucut</item>
+        <item>Bola</item>
+    </string-array>
+
+</resources>
