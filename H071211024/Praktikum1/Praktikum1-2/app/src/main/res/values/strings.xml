@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Praktikum1-2</string>
+    <string name="pickername">Pilih Bangun Ruang: </string>
+    <string name="jarijari">Jari - jari</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="panjang">Panjang</string>
+    <string name="lebar">Lebar</string>
+    <string-array name="picker_array">
+        <item>Bola</item>
+        <item>Kerucut</item>
+        <item>Balok</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
