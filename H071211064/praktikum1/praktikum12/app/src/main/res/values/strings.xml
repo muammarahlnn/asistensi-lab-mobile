@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">praktikum12</string>
+    <string name="jari_jari">Jari-jari</string>
+    <string-array name="geometries">
+        <item>Balok</item>
+        <item>Kerucut</item>
+        <item>Bola</item>
+    </string-array>
+</resources>
