@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">prak_intent</string>
+    <string name="username">Username</string>
+    <string name="full_name">Full name</string>
+</resources>
