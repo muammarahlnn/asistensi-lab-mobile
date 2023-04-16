@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
     @Override
     public void onProfileClick(int position) {
         Toast.makeText(this, "Pencet Opo " + myListData[position].getName(), Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, ShowProfile.class);
+        Intent intent = new Intent(this, ShowProfileHome.class);
         intent.putExtra("image", myListData[position].getImage());
         intent.putExtra("name", myListData[position].getName());
         startActivity(intent);

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShowProfile">
+    tools:context=".ShowProfileHome">
 
     <ImageButton
         android:id="@+id/backButton"
@@ -38,5 +38,4 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profileName" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

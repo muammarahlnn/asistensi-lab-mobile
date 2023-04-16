@@ -43,6 +43,10 @@ public class ChatDetail extends AppCompatActivity {
 
             imageView.setImageResource(bundle.getInt("image"));
             profileName.setText(bundle.getString("name"));
+            String status = getIntent().getExtras().getString("status");
+            String phoneNumber = getIntent().getExtras().getString("phoneNumber");
+            String date = getIntent().getExtras().getString("date");
+
         }
 
 
@@ -80,6 +84,18 @@ public class ChatDetail extends AppCompatActivity {
 
         recyclerView.setAdapter(messageAdapter);
 
+        messageList.add(new Message("user", "Halo, apa kabar?"));
+        messageList.add(new Message("other", "Hai, kabar baik. Bagaimana denganmu?"));
+        messageList.add(new Message("user", "Baik juga. Ada yang bisa dibantu?"));
+        messageList.add(new Message("other", "Tidak, terima kasih. Hanya ingin bertanya-tanya saja."));
+        messageList.add(new Message("user", "Halo, apa kabar?"));
+        messageList.add(new Message("other", "Hai, kabar baik. Bagaimana denganmu?"));
+        messageList.add(new Message("user", "Baik juga. Ada yang bisa dibantu?"));
+        messageList.add(new Message("other", "Tidak, terima kasih. Hanya ingin bertanya-tanya saja."));
+        messageList.add(new Message("user", "Halo, apa kabar?"));
+        messageList.add(new Message("other", "Hai, kabar baik. Bagaimana denganmu?"));
+        messageList.add(new Message("user", "Baik juga. Ada yang bisa dibantu?"));
+        messageList.add(new Message("other", "Tidak, terima kasih. Hanya ingin bertanya-tanya saja."));
         messageList.add(new Message("user", "Halo, apa kabar?"));
         messageList.add(new Message("other", "Hai, kabar baik. Bagaimana denganmu?"));
         messageList.add(new Message("user", "Baik juga. Ada yang bisa dibantu?"));

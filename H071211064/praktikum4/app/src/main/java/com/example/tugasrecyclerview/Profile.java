@@ -37,6 +37,9 @@ public class Profile extends AppCompatActivity {
                 Intent intent = new Intent(Profile.this, ShowProfile.class);
                 intent.putExtra("image", bundle.getInt("image"));
                 intent.putExtra("name", bundle.getString("name"));
+                intent.putExtra("status", bundle.getString("status"));
+                intent.putExtra("phoneNumber", bundle.getString("phoneNumber"));
+                intent.putExtra("date", bundle.getString("date"));
                 startActivity(intent);
             }
         });
@@ -47,6 +50,9 @@ public class Profile extends AppCompatActivity {
                 Intent intent = new Intent(Profile.this, ChatDetail.class);
                 intent.putExtra("image", bundle.getInt("image"));
                 intent.putExtra("name", bundle.getString("name"));
+                intent.putExtra("status", bundle.getString("status"));
+                intent.putExtra("phoneNumber", bundle.getString("phoneNumber"));
+                intent.putExtra("date", bundle.getString("date"));
                 startActivity(intent);
             }
         });
