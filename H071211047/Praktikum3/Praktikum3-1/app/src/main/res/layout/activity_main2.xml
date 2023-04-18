@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="#594545">
+
+    <TextView
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="17dp"
+        android:text="New Post"
+        android:textColor="#F6E1C3"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginBottom="256dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:columnCount="2"
+        android:padding="3dp"
+        android:rowCount="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/upfoto"
+            android:layout_width="197dp"
+            android:layout_height="210dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_insert_photo_24" />
+
+        <EditText
+            android:id="@+id/caption"
+            android:layout_width="222dp"
+            android:layout_height="218dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@color/white"
+            android:gravity="clip_horizontal"
+            android:hint="Write a caption"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/btnpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="152dp"
+        android:backgroundTint="#B8621B"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

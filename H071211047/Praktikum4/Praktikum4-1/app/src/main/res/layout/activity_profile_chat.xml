@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".messages.ProfileChatActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:backgroundTint="#00000000"/>
+        <TextView
+            android:id="@+id/namaprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@+id/btnback"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/pp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:layout_marginHorizontal="3dp"
+        android:layout_marginVertical="180dp"/>
+
+</LinearLayout>
