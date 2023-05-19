@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatBox"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+
+    <ImageButton
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:backgroundTint="@color/black"
+        />
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="APR 29 AT 23:00"
+        android:textAlignment="center"
+        android:textColor="#989696"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/userr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/profPics"
+        android:text="username"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:layout_marginTop="4dp"
+        android:text="Active Now"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/userr"
+        android:layout_toEndOf="@id/profPics"
+        android:layout_marginStart="18dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profPics"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/back"
+        android:src="@drawable/blank" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/back"
+        android:id="@+id/back"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/date"
+        android:layout_marginTop="30dp"
+        android:padding="5dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
