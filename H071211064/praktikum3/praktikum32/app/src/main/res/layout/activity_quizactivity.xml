@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quizactivity">
+
+    <TextView
+        android:id="@+id/number_question"
+        android:layout_width="45dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:text=" 0"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/number_question_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="/5"
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@+id/number_question"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="285dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="36dp"
+        android:text="Pertanyaan"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_question" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/jawaban1"
+        android:layout_width="263dp"
+        android:layout_height="54dp"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:text="JAWABAN 1"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/jawaban2"
+        android:layout_width="263dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button"
+        android:text="JAWABAN 2"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/jawaban1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/jawaban1"
+        app:layout_constraintTop_toBottomOf="@+id/jawaban1" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/jawaban3"
+        android:layout_width="263dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
+        android:text="JAWABAN 3"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/jawaban2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/jawaban2"
+        app:layout_constraintTop_toBottomOf="@+id/jawaban2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/jawaban4"
+        android:layout_width="263dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
+        android:text="JAWABAN 4"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/jawaban3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/jawaban3"
+        app:layout_constraintTop_toBottomOf="@+id/jawaban3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
