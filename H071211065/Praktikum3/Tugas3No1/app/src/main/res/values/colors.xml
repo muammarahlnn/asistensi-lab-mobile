@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Onyx">#FF3f4045</color>
+    <color name="Raisin_Black">#FF30292f</color>
+    <color name="Rich_Black">#262727</color>
+    <color name="Teal_White">#FFfcfcfc</color>
+    <color name="Pay_Grey">#FFE6E1C5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
