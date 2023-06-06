@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="15dp"
+    tools:context=".UploadFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            app:cardCornerRadius="5dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_upload"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_image_24" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="5dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="17dp">
+
+                <EditText
+                    android:id="@+id/et_caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Write a caption..." />
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/default_color"
+            android:text="upload"
+            android:textColor="@color/white"
+            app:cardCornerRadius="5dp" />
+    </LinearLayout>
+
+</ScrollView>
