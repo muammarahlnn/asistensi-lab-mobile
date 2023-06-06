@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        card_view:cardCornerRadius="10dp"
+        android:backgroundTint="@color/white"
+        android:padding="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/wanwann"
+            android:background="@color/material_dynamic_neutral50"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/Nama1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="indahkurniailahi"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginLeft="100dp"/>
+            <TextView
+                android:id="@+id/Nama2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="indahhchan_"
+                android:textSize="12sp"
+                android:textColor="#626161"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="100dp"/>
+
+            <ImageView
+                android:id="@+id/picture1"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/baseline_image_24"/>
+
+            <TextView
+                android:id="@+id/caption1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caption here"
+                android:textSize="15sp"
+                android:textColor="#757676"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
