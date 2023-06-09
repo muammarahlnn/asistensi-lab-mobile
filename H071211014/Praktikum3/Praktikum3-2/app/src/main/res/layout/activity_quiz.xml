@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    android:background="@color/purple_200">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Quiz 1 of 5"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_soal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
+        android:text="Raja para dewa di mitologi yunani?"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_pilihan1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_pilihan"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="16dp"
+        android:text="Poseidon"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <TextView
+        android:id="@+id/tv_pilihan2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_pilihan"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="16dp"
+        android:text="Zeus"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pilihan1"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <TextView
+        android:id="@+id/tv_pilihan3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_pilihan"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="16dp"
+        android:text="Haden"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pilihan2"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <TextView
+        android:id="@+id/tv_pilihan4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_pilihan"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="16dp"
+        android:text="Odin"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pilihan3"
+        tools:layout_editor_absoluteX="24dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

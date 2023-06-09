@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/profile"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"/>
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Nama"/>
+        <TextView
+            android:id="@+id/tv_preview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLines="1"
+            android:textSize="20dp"
+            android:text="Chat"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="10:00"/>
+</LinearLayout>

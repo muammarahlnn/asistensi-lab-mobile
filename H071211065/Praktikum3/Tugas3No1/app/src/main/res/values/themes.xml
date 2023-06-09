@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Tugas3No1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/Raisin_Black</item>
+        <item name="colorPrimaryVariant">@color/Rich_Black</item>
+        <item name="colorOnPrimary">@color/Teal_White</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Teal_White</item>
+        <item name="colorSecondaryVariant">@color/Pay_Grey</item>
+        <item name="colorOnSecondary">@color/Onyx</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ThemeBg">
+        <item name="android:background">@color/Pay_Grey</item>
+    </style>
+
+    <style name="ReLayoutBg">
+        <item name="android:backgroundTint">@color/Teal_White</item>
+    </style>
+
+    <style name="roundedImg">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="captionFormStyle">
+        <item name="android:background">@drawable/form_bg</item>
+        <item name="android:backgroundTint">@color/Teal_White</item>
+    </style>
+</resources>
