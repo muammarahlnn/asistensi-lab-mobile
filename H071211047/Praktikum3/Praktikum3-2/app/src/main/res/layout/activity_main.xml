@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pict"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz!"
+        android:textSize="30dp"
+        android:id="@+id/quis"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Question"
+        android:textSize="30dp"
+        android:id="@+id/totalQuestion"
+        android:layout_below="@+id/quis"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Question"
+        android:textSize="24dp"
+        android:layout_above="@+id/layout"
+        android:textAlignment="center"
+        android:layout_margin="30dp"
+        android:textColor="@color/white"
+        android:id="@+id/soal"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:padding="15dp"
+            android:text="Ans"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/ans2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:padding="15dp"
+            android:text="Ans"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/ans3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:padding="15dp"
+            android:text="Ans"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/ans4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:padding="15dp"
+            android:text="Ans"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</RelativeLayout>
