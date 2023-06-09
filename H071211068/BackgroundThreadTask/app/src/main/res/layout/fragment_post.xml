@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PostFragment">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_pict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp">
+
+            <ImageView
+                android:id="@+id/iv_pict"
+                android:layout_width="match_parent"
+                android:layout_height="321dp"
+                android:src="@drawable/baseline_image_24"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_capt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cv_pict">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/write_caption"
+                android:textColorHint="#A8A8A8"
+                app:boxBackgroundMode="outline">
+
+                <EditText
+                    android:id="@+id/et_capt"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:background="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_uploud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_capt"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/btn_uploud"
+        android:backgroundTint="#6200EC"/>
+
+</RelativeLayout>
