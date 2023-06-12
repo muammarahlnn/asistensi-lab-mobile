@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Local SQLite</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
+    <string name="hobby">Hobby</string>
+    <string name="save">Save</string>
+    <string name="change">Change</string>
+    <string name="delete">Delete</string>
+</resources>

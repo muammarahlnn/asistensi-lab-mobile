@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/civ_story"
+        android:src="@drawable/patrick_star"
+        />
+
+    <TextView
+        android:id="@+id/tv_username_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User" />
+</LinearLayout>
